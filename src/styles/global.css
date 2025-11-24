@@ -53,20 +53,20 @@ body::before {
 		opacity: 0.5;
 	}
 
-a {
+a:not(.btn) {
     color: var(--t-link-color);
     text-decoration: underline;
     text-underline-offset: --spacing(0.5);
 }
-:not(#main-menu) > a:hover {
+:not(#main-menu | .btn) > a:hover {
     /*color: var(--t-link-hover-color);*/
     /*background-color: #ffff0055;*/
     text-shadow: 0 0 10px orange;
 }
-:not(.navlinks) > a::before {
+:not(.navlinks | .btn) > a::before {
   content: "[";
 }
-:not(.navlinks) > a::after {
+:not(.navlinks | .btn) > a::after {
   content: "]";
 }
 nav a[aria-current="page"] {
