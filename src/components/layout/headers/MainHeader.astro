@@ -17,7 +17,6 @@ const curPageS = ( curPage === '' ? ' / ' : curPage.replace(/\//g, " / ") )
     <!-- slot nav-right -->
     <Navigation slot="nav-right">
         <a aria-current={curPage === '' ? 'page' : 'false'} href="/">Inicio</a>
-        <a aria-current={curPage.startsWith('contacto/') ? 'page' : 'false'} href="/contacto/">Contacto</a>
-        <a aria-current={curPage.startsWith('quienes_somos/') ? 'page' : 'false'} href="/quienes_somos/">Quiénes somos</a>
+        <a aria-current={curPage.startsWith('quienes_somos/') ? 'page' : 'false'} href="/quienes_somos/">Sobre nosotros</a>
     </Navigation>
 </Header>
